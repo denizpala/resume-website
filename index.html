@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Website Deniz Pala</title>
     <style>
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Karla', sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -54,22 +57,17 @@
         }
 
         .left-column {
-            width: 30%; /* Adjust the width of the left column as needed */
+            width: 33%; /* Adjust the width of the left column as needed */
             background-color: #152b41; /* Navy Background */
             color: #fff;
             padding: 20px;
         }
 
         .right-column {
-            width: 70%; /* Adjust the width of the right column as needed */
+            width: 67%; /* Adjust the width of the right column as needed */
             padding: 20px;
         }
         
-        /* Photo */
-        .photo {
-            max-width: 100%; /* Ensure the image doesn't exceed the column width */
-            height: auto; /* Maintain aspect ratio */
-        }
         
         /* Style the contact information */
         .contact-info {
@@ -90,8 +88,18 @@
             color: #15324f; /* Navy Text */
         }
 
-        p {
-            font-size: 16px;
+        /* Customize the styling of your resume sections as needed */
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-weight: bold;
+        }
+
+        .section-content {
+            margin-left: 20px;
+            margin-right: 20px;
         }
 
         /* Page Break */
@@ -120,6 +128,23 @@
         <div class="right-column">
             <!-- Right Column Content (e.g., sections for education, experience, etc.) -->
             <h1 class="name">Deniz Pala</h1>
+            
+            <div class="section">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="job">
+                    <h3 class="workplace"><strong>Daiichi Infotainment Systems</strong> <span class="duration">June to July 2023</span></h3>
+                    <h3 class="position">Automotive Engineering Intern</h3>
+                    <ul class="job-highlights">
+                        <li><strong>Autonomous Vehicle Projects:</strong> Collaborated on Autonomous Vehicle Development projects, gaining valuable insights into their impact on the automotive industry.</li>
+                        <li><strong>AI in Project Management:</strong> Developed a comprehensive presentation designed to educate employees across branches on AI-driven project development.</li>
+                        <li><strong>Proficiency in Project Management Tools:</strong> Designed handbooks for project management tools (e.g., Jira, Confluence, Microsoft365, Codebeamer) to assist employees unfamiliar with the platforms.</li>
+                        <li><strong>Automotive Parts Testing Facilities:</strong> Visited Automotive Parts Testing Facilities, gaining valuable hands-on experience and a deeper understanding of quality control processes in the automotive industry.</li>
+                        <li><strong>Configuration Engineering:</strong> Provided translation services while acquiring valuable insights into the domain of configuration engineering.</li>
+                    </ul>
+                </div>
+                <!-- Add other job experiences here -->
+            </div>
+
             <h2>Education</h2>
             <p><strong>Degree:</strong> Bachelor of Applied Sciences and Engineering in Computer Engineering</p>
             <p><strong>University:</strong> University of Toronto</p>

@@ -11,3 +11,51 @@
       margin: 0; /* No margins for printing */
     }
   }
+
+  /* Photo */
+  .photo {
+    display: block;
+    margin-top: 0.5cm;
+    margin-left: auto;
+    width: 100%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h3 {
+    margin: 0px;
+    padding:0px;
+  }
+
+  .job .workplace {
+    font-size: 120%;
+    margin-top: 0px; /* Add space above workplace */
+    margin-bottom: 6px; /* Add space below workplace */
+}
+
+.job .duration {
+    font-size: 80%;
+    float: right;
+    margin-right:10px;
+    margin-top: 5px; /* Add space above duration */
+    margin-bottom:10px;
+}
+
+.job .position {
+  font-size: 100%;
+  margin-top: 0px; /* Add space above job position */
+    margin-bottom: 15px; /* Remove the margin below the job position */
+}
+
+.job {
+  margin-bottom: 5px; /* Adjust the space between position and workplace */
+}
+
+.job-highlights {
+  text-align: justify;
+  margin-top: 5px; /* Add space above job highlights */
+  margin-bottom: 10px; /* Add space below job highlights */
+  margin-right:10px;
+}
