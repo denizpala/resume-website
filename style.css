@@ -20,8 +20,16 @@
     width: 100%;
   }
 
+  .section-title {
+    font-weight: bold;
+    font-size: 22px;
+    
+}
+
   p {
-    font-size: 16px;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   h3 {
@@ -29,24 +37,38 @@
     padding:0px;
   }
 
+  .section-title {
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+
+  hr {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding:0px;
+    height:2px;
+    background-color:#152b41
+  }
+
   .job .workplace {
-    font-size: 120%;
+    font-size: 18px;
     margin-top: 0px; /* Add space above workplace */
-    margin-bottom: 6px; /* Add space below workplace */
+    margin-bottom: 0px; /* Add space below workplace */
 }
 
 .job .duration {
-    font-size: 80%;
+    font-size: 15px;
     float: right;
     margin-right:10px;
-    margin-top: 5px; /* Add space above duration */
-    margin-bottom:10px;
+    margin-top:1px; /* Add space above duration */
+    margin-bottom:0px;
 }
 
 .job .position {
+  font-size: 14px;
   font-size: 100%;
   margin-top: 0px; /* Add space above job position */
-    margin-bottom: 15px; /* Remove the margin below the job position */
+  margin-bottom: 9px; /* Remove the margin below the job position */
 }
 
 .job {
@@ -57,5 +79,6 @@
   text-align: justify;
   margin-top: 5px; /* Add space above job highlights */
   margin-bottom: 10px; /* Add space below job highlights */
-  margin-right:10px;
+  margin-right: 20px;
+  font-size: 15px;
 }
