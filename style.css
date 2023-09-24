@@ -1,0 +1,13 @@
+@media print {
+    /* Hide page numbers and timestamps */
+    .page-numbers,
+    .timestamps {
+      display: none;
+    }
+  
+    /* Adjust styles for printing */
+    .container {
+      width: 100%; /* Use the full width of the page */
+      margin: 0; /* No margins for printing */
+    }
+  }
