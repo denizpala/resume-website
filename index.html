@@ -3,62 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deniz Pala - Resume</title>
+    <title>Your Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
+
+        /* Resume Container */
         .container {
+            width: 210mm; /* A4 width */
+            height: 297mm; /* A4 height */
+            margin: 0 auto;
+            background-color: white;
             display: flex;
-            justify-content: space-between;
         }
+
+        /* Left Column (Navy) */
         .left-column {
-            flex: 1;
+            width: 30%;
+            background-color: #001f3f; /* Navy Background */
+            color: #fff;
             padding: 20px;
+            box-sizing: border-box;
         }
+
+        /* Right Column (White) */
         .right-column {
-            flex: 2;
-            background-color: #f2f2f2;
+            width: 70%;
             padding: 20px;
+            box-sizing: border-box;
         }
-        h1 {
+
+        .header img {
+            width: 100px; /* Adjust the width of your photo */
+            height: 100px; /* Adjust the height of your photo */
+            border-radius: 50%; /* Rounded photo */
+            margin-right: 20px;
+        }
+
+        .header h1 {
             font-size: 24px;
         }
+
+        /* Main Content Layout */
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .left-column {
+            width: 30%; /* Adjust the width of the left column as needed */
+            background-color: #001f3f; /* Navy Background */
+            color: #fff;
+            padding: 20px;
+        }
+
+        .right-column {
+            width: 70%; /* Adjust the width of the right column as needed */
+            padding: 20px;
+        }
+        
+        /* Photo */
+        .photo {
+            max-width: 100%; /* Ensure the image doesn't exceed the column width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        
+        /* Section Styles */
         h2 {
             font-size: 18px;
-            color: #0078d4;
+            color: #001f3f; /* Navy Text */
         }
+
         p {
             font-size: 16px;
+        }
+
+        /* Page Break */
+        .page-break {
+            page-break-before: always;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
         <div class="left-column">
-            <h1>Deniz Pala</h1>
-            <p>Computer Engineering Undergraduate</p>
-            <p>University of Toronto</p>
+            <!-- Left Column Content (e.g., contact information) -->
+            <img src="https://raw.githubusercontent.com/denizpala/resume/main/images/photo.jpg" alt="Your Photo" class="photo">
+    <h2>Your Name</h2>
+            <p>Contact Information:</p>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: (123) 456-7890</p>
         </div>
+
         <div class="right-column">
+            <!-- Right Column Content (e.g., sections for education, experience, etc.) -->
             <h2>Education</h2>
-            <p><strong>University of Toronto</strong><br>Computer Engineering<br>Expected Graduation: 20XX</p>
+            <p><strong>Degree:</strong> Bachelor of Science in Computer Engineering</p>
+            <p><strong>University:</strong> University of Toronto</p>
+            <p><strong>Graduation:</strong> Month Year</p>
 
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: C++, Java, Python</li>
-                <li>Web Development: HTML/CSS, JavaScript</li>
-                <li>Database Management: SQL</li>
-                <li>Operating Systems: Windows, Linux</li>
-            </ul>
+            <!-- Add more sections (e.g., experience, skills, etc.) -->
 
+            <!-- Page Break for the second page -->
+            <div class="page-break"></div>
+
+            <!-- Additional sections for the second page -->
             <h2>Experience</h2>
-            <p><strong>IT Intern</strong><br>Aplimax IT and Consulting Firm<br>Summer 2021</p>
-            <ul>
-                <li>Received training integrated e-business solutions and e-commerce.</li>
-                <li>Focused on the job market for consultancy on improving digital marketing, digital communication and visual design.</li>
-                <li>Assisted the IT team during their software development and system integration services.</li>
-            </ul>
+            <p><strong>Job Title:</strong> Company Name, Location</p>
+            <p><strong>Dates:</strong> Month Year - Month Year</p>
+            <p>Job description goes here...</p>
+
+            <!-- Add more sections for the second page as needed -->
         </div>
     </div>
 </body>
